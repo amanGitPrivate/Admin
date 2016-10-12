@@ -1,0 +1,107 @@
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0px !important;
+}
+html{
+  width: 100%;
+  height: 100%;
+}
+input{
+  color:white;
+}
+.sideDrawer>div{
+  background-color:  #292a4b !important;
+}
+.avtarWrapper{
+  position: relative;
+  margin-top: 40px;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+  padding: 10px;
+}
+.whiteText{
+  color:white;
+}
+.loginPageTextBox{
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 10px;
+  height: 25px;
+  padding: 5px;
+  padding-left: 10px;
+  background-color: #292a4b;
+  outline: none;
+  border: 0px;
+}
+.adminWrapper{
+  position: relative;
+  margin-bottom: 5%;
+  color: white;
+  font-family: helvetica;
+}
+.loginSection{
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  top:86px;
+}
+.loginBlockWrapper{
+  width: 100%;
+  height: 100%;
+  background: #212146;
+  position: absolute;
+}
+.mainContainer, .mainWrapper, #app {
+    width: 100%;
+    height: 100%;
+  }
+
+
+.fixedDataTableRowLayout_rowWrapper>div{
+
+}
+.welcomePageWrapper{
+  text-align: center;
+  height: 100%;
+}
+.welcomeNameWrapper{
+  width: 100%;
+  height: 55px;
+  background-color: #212146;
+  padding-top: 15px;
+  color: white;
+  font-family: helvetica;
+}
+.optionWrapper{
+  background-color: #efefef;
+  height: 90%;
+}
+.selectOption{
+  font-size: 15px;
+  font-family: helvetica;
+  color: grey;
+  font-weight: 200;
+  height: 50px;
+  padding-top: 20px;
+}
+.rooms,.satelliteOffices{
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  top: 50px;
+  border-radius: 70px;
+  border: 1px solid grey;
+}
+.satelliteOffices:hover{
+  border:1px solid red;
+}
+.rooms:hover{
+  border:1px solid red;
+}
+.roomWrapper,.satelliteWrapper{
+  height: 150px;
+  width: 200px;
+  margin: 0 auto;
+}

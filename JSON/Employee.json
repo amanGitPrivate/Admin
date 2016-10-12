@@ -1,0 +1,32 @@
+[
+{
+	"Name":"New Delhi",
+	"latitude":"28.38",
+	"longitude":"76.16"
+},
+{
+    "Name":"Kolkata",
+	"latitude":"22.34",
+	"longitude":"88.21"
+},
+{
+    "Name":"Mumbai",
+	"latitude":"19.4",
+	"longitude":"72.52"
+},
+{
+	"Name":"Kochi",
+	"latitude":"9.55",
+	"longitude":"76.16"
+},
+{
+	"Name":"Srinagar",
+	"latitude":"34.5",
+	"longitude":"74.47"
+},
+{
+	"Name":"New Delhi",
+	"latitude":"28.38",
+	"longitude":"76.16"
+}
+]

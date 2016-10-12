@@ -1,0 +1,32 @@
+.sideBarContentWrapper{
+  background-color: #efefef;
+  height: 90%;
+}
+.tableWrapper{
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.bookingsHeader{
+  margin-bottom: 16px;
+  font-family: helvetica;
+  font-size: 16px;
+  color: #333;
+}
+.contentContainer{
+  height: 100%;
+  width: 100%;
+}
+.sideBarPagesContainer{
+  width: 100%;
+  height: 100%;
+}
+.avtarDetailsWrapper{
+  float: right;
+  position: absolute;;
+  display: inline-block;
+  top:12px;
+}
+.cellAvatar{
+  display: inline-block !important;
+}
