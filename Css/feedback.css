@@ -1,0 +1,51 @@
+.feedbackRoom{
+  height: 100%;
+  width: 100%;
+}
+.feedbackPageContentWrapper{
+  width: 96%;
+  height: 70%;
+  margin: 0 auto;
+}
+.headerStarContainer{
+  background-color: white;
+}
+.guestHouseLocation{
+  -webkit-flex:1;
+}
+.feebbackPageHeader{
+  width: 100%;
+  display: -webkit-flex;
+  border-bottom: 2px solid #e5e5e5;
+}
+.guestHouseLocation{
+  -webkit-flex: 1;
+  color: #333;
+  font-size: 16px;
+  margin: 15px;
+}
+.eachFeedBackWrapper{
+  width: 98%;
+  border-bottom: 1px solid #ececec;
+  margin: 0 auto;
+  display: -webkit-flex;
+}
+.detailsDivFeedback{
+  -webkit-flex:1;
+  margin-bottom: 10px;
+  margin-top: 10px
+}
+.dv-star-rating{
+  top:10px;
+}
+.commentsValue{
+  margin-top: 15px;
+}
+.feedbackLabel{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: helvetica;
+  font-size: 18px;
+  color: #9f9f9f;
+  font-weight: 200;
+}

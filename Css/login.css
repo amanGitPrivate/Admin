@@ -1,15 +1,3 @@
-body{
-  width: 100%;
-  height: 100%;
-  margin: 0px !important;
-}
-html{
-  width: 100%;
-  height: 100%;
-}
-input{
-  color:white;
-}
 .sideDrawer>div{
   background-color:  #292a4b !important;
 }
@@ -95,13 +83,18 @@ input{
   border: 1px solid grey;
 }
 .satelliteOffices:hover{
-  border:1px solid red;
+  border:1px solid #63c4e0;
+  cursor: pointer;
 }
 .rooms:hover{
-  border:1px solid red;
+  border:1px solid #63c4e0;
+  cursor: pointer;
 }
 .roomWrapper,.satelliteWrapper{
   height: 150px;
   width: 200px;
   margin: 0 auto;
+}
+.signIn{
+  cursor: pointer;
 }

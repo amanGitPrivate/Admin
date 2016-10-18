@@ -1,0 +1,20 @@
+@import url("./login.css");
+@import url("./table.css");
+@import url("./bookingsTable.css");
+@import url("./addRooms.css");
+@import url("./feedback.css");
+body{
+  width: 100%;
+  height: 100%;
+  margin: 0px !important;
+}
+html{
+  width: 100%;
+  height: 100%;
+}
+input{
+  color:white;
+}
+.badge svg{
+  color: white !important;
+}

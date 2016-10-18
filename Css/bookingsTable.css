@@ -1,17 +1,19 @@
 .sideBarContentWrapper{
   background-color: #efefef;
-  height: 90%;
+  height: 100%;
 }
 .tableWrapper{
   width: 90%;
   margin: 0 auto;
   padding-top: 20px;
+  height: 100%;
 }
 .bookingsHeader{
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   font-family: helvetica;
-  font-size: 16px;
-  color: #333;
+  font-size: 18px;
+  color: #9f9f9f;
+  font-weight: 200;
 }
 .contentContainer{
   height: 100%;
@@ -21,12 +23,184 @@
   width: 100%;
   height: 100%;
 }
+.avtarDetails:first-of-type,.guestHouseName{
+  font-weight: bold;
+}
+.guestHouseName{
+  margin-bottom: 3px;
+}
+.avtarDetails{
+  margin-bottom: 10px
+}
+.checkInOut:first-of-type{
+  margin-bottom: 5px;
+  margin-top: 2px
+}
 .avtarDetailsWrapper{
   float: right;
   position: absolute;;
   display: inline-block;
-  top:12px;
+  top:13px;
+  left: 80px
 }
 .cellAvatar{
   display: inline-block !important;
+}
+.userID{
+  margin-top: 15px;
+  margin-left: 5px
+}
+.displayNone{
+  display: none !important;
+}
+.allocate,.save,.cancel{
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  background-color: grey;
+  border-radius: 25px;
+  margin-top: 25px;
+  margin-right: 5px;
+}
+.idLocationDropDownContainer{
+  float: right;
+}
+.bookingsHeaderUpcoming{
+  float: left;
+  margin-bottom: 20px;
+  font-family: helvetica;
+  font-size: 18px;
+  color: #9f9f9f;
+  font-weight: 200;
+}
+.idClass,.locationClass{
+  margin-right: 10px;
+  margin-left: 10px;
+  font-family: helvetica;
+  cursor: pointer;
+}
+.idLocationContainer{
+  display: inline-block;
+  background-color: white;
+  border-bottom-left-radius: 18px;
+  border-top-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  border-top-right-radius: 18px;
+  width: 150px;
+  text-align: center;
+  margin-right: 10px;
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+.dropDownContainer{
+  float: right;
+  margin-top: -22px;
+  padding-top: 10px;
+}
+.headerDropDownContainer{
+  height:50px;
+}
+.locationTableWrapper{
+  background-color: white;
+  padding: 15px;
+  border-bottom: 2px solid #e5e5e5;
+  padding-bottom: 15px
+}
+.loactionTableHeaderWrapper{
+  display: -webkit-flex;
+  width: 100%;
+  border-bottom: 2px solid #efefef;
+  padding-bottom: 10px
+}
+.locationContainer{
+  margin-top: 20px;
+}
+.guestHouseLabel{
+  -webkit-flex:2;
+}
+.roomsLabel{
+  -webkit-flex:3;
+}
+.locationWrapper{
+  -webkit-flex: 2;
+}
+.roomsWrapper{
+  -webkit-flex: 3;
+   text-align: left;
+}
+.locationTableRowWrapper{
+  display: -webkit-flex;
+  border-bottom: 2px solid #efefef;
+  margin-top: 20px;
+  height: 110px
+}
+.locationTableRowWrapper:last-of-type{
+  display: -webkit-flex;
+  border-bottom: none;
+}
+.addressSet{
+  -webkit-flex: 2;
+}
+.roomWrapper{
+  -webkit-flex:3;
+}
+.outerRing{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.outerRingBorderClass{
+  border: 1px solid #44b2f8;
+}
+.outerRing:first-of-type{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  margin-left: 0px;
+}
+.innerRingOccupied{
+  width: 21px;
+  height: 21px;
+  border-radius: 20px;
+  margin: 2px;
+  background-color: #28abd4;
+}
+.innerRingEmpty{
+  width: 17px;
+  height: 17px;
+  border-radius: 20px;
+  margin: 2px;
+  border: 2px solid;
+}
+.ringWrapper{
+  border-bottom: 1px solid #28abd4;
+  padding-bottom: 10px
+}
+.userDetailsWrapper{
+  display: -webkit-flex;
+}
+.detailsDiv{
+  -webkit-flex:1;
+  padding-top: 10px;
+}
+.detailsHeader{
+  margin-bottom: 5px;
+  color: #9a9a9a;
+  font-size: 14px;
+}
+.selectedBlue{
+  margin-bottom: 20px;
+  font-family: helvetica;
+  color: #44b2f8;
+  font-weight: 200;
+}
+.regionDropDown{
+  margin-top: 10px;
+}
+.regionDropDown>div{
+  margin-top: -12px;
 }

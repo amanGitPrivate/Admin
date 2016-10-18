@@ -1,0 +1,101 @@
+.addGuestHouseMainWrapper{
+  height: 100%;
+  width: 100%;
+}
+.addGuestHousePage{
+  height: 80%;
+  width: 96%;
+  margin: 0 auto;
+  top: 20px;
+  position: relative;
+}
+.primarySecondaryWrapper{
+  background-color: white;
+  height: 100%;
+  margin: 0 auto;
+}
+.addGuestPrimaryDetailsSection{
+  width: 98%;
+  height: 50%;
+  margin: 0 auto;
+  position: relative;
+  border-bottom: 1px solid #ececec;
+}
+.primaryDetailsSection{
+  display: -webkit-flex;
+  height: 100%;
+}
+.addDisplayPicture{
+  min-width: 14%;
+  margin: 20px;
+}
+.pictureDiv{
+  border-radius: 50%;
+  width: 100%;
+  padding-bottom: 100%;
+  border: 1px dashed #a8a8a8;
+}
+.addPictureLabel{
+  text-align: center;
+  margin-top: 20px;
+}
+.prmiaryFieldWrapper{
+  -webkit-flex: 3;
+  margin-left: 50px;
+}
+.phoneNumber{
+  -webkit-flex:1;
+  margin-right: 40px;
+}
+.addGuestHouseLocation{
+  -webkit-flex:1;
+}
+.amenities{
+  display: inline-block;
+  min-width: 160px;
+  font-size: 14px;
+}
+.secondorySectionWrapper{
+  width: 98%;
+  height: 45%;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+.careTakerWrapper{
+  display: -webkit-flex;
+}
+.careTakerDetails{
+  -webkit-flex: 1;
+}
+.primaryDetailsLabel{
+  padding-top: 18px;
+  font-size: 20px;
+  color: #9c9c9c;
+}
+.guestHouseNameBooking{
+  margin-top: -10px;
+}
+.addAddress{
+  margin-top: -10px;
+}
+.contactNumberGuestHouseLocation{
+  display: -webkit-flex;
+  margin-top: -20px;
+}
+.addMorePicturesButton{
+  margin-top: 10px;
+  color: #38A2f9;
+}
+.amenitiesLabel,.careTakerLabel{
+  padding-top: 18px;
+  font-size: 20px;
+  color: #9c9c9c;
+}
+.checkBoxElements{
+  margin-top: 15px;
+}
+.addGuestHouseLabel{
+  padding-bottom: 18px;
+  font-size: 20px;
+  color: #9c9c9c;
+}

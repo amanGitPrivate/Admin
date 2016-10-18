@@ -9,7 +9,7 @@ const {Table, Column, Cell} = FixedDataTable;
 
 const TextCell = ({rowIndex, data, col}) => (
   <Cell>
-    {data.getObjectAt(rowIndex)[col]}
+    <div className = "userID">{data[rowIndex]["id"]}</div>
   </Cell>
 );
 
@@ -40,6 +40,13 @@ const TextCellAvtar = ({rowIndex, data, col}) => (
   </div>
 );
 
+const TextCellAction = ({rowIndex, data, col}) => (
+  <div className = "cellAvatar">
+    <div className = "allocate"></div>
+    <div className = "save"></div>
+    <div className = "cancel"></div>
+  </div>
+);
 
 class BookingsTable extends React.Component {
   constructor(props) {
@@ -51,23 +58,24 @@ class BookingsTable extends React.Component {
   }
 
   render() {
-    var {dataList} = this.state;
-    console.log('dataList',dataList)
+    let dataList = this.props.listOfUpcomingBookings;
+    console.log('listOfUpcomingBookings',this.props.listOfUpcomingBookings)
     return (
     <div className = "tableWrapper">
       <div className = "bookingsHeader">{this.props.pageName}</div>
       <Table
         rowHeight={80}
         headerHeight={50}
-        rowsCount={dataList.getSize()}
+        rowsCount={dataList.length}
         width={this.props.containerWidth-140}
         height={500}
+        className = {"hello"}
         {...this.props}>
         <Column
           header={<Cell>Id</Cell>}
           cell={<TextCell data={dataList} col="firstName" />}
           fixed={true}
-          width={(this.props.containerWidth-140)/5}
+          width={(this.props.containerWidth-140)/10}
         />
         <Column
           header={<Cell>Profile & Charge Code</Cell>}
@@ -75,7 +83,7 @@ class BookingsTable extends React.Component {
           width={(this.props.containerWidth-140)/5}
         />
         <Column
-          width={(this.props.containerWidth-140)/5}
+          width={(this.props.containerWidth-140)/3}
           header={<Cell>Guest House Location & Address</Cell>}
           cell={<TextCellLocation data={dataList} col="lastName" />}
         />
@@ -85,9 +93,19 @@ class BookingsTable extends React.Component {
           cell={<TextCellCheckIn data={dataList} col="lastName" />}
         />
         <Column
-          width={(this.props.containerWidth-140)/5}
-          header={<Cell>Status</Cell>}
+          width={(this.props.containerWidth-140)/10}
+          header={<Cell>Additional Request</Cell>}
           cell={<TextCell data={dataList} col="lastName" />}
+        />
+        <Column
+          width={(this.props.containerWidth-140)/10}
+          header={<Cell>Reason</Cell>}
+          cell={<TextCell data={dataList} col="lastName" />}
+        />
+        <Column
+          width={(this.props.containerWidth-140)/10}
+          header={<Cell>Action</Cell>}
+          cell={<TextCellAction data={dataList} col="lastName" />}
         />
       </Table>
     </div>

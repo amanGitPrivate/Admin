@@ -1,24 +1,4 @@
-/**
- * FixedDataTable v0.6.3
- *
- * Copyright (c) 2015, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- */
 
-/**
- * Copyright (c) 2015, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- *
- * @providesModule fixedDataTableCellGroupLayout
- */
 
 .fixedDataTableCellGroupLayout_cellGroup {
   -webkit-backface-visibility: hidden;
@@ -40,16 +20,6 @@
   position: absolute;
   top: 0;
 }
-/**
- * Copyright (c) 2015, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- *
- * @providesModule fixedDataTableCellLayout
- */
 
 .fixedDataTableCellLayout_main {
   border-right-width: 1px;
@@ -107,16 +77,7 @@
   visibility: hidden;
   width: 4px;
 }
-/**
- * Copyright (c) 2015, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- *
- * @providesModule fixedDataTableColumnResizerLineLayout
- */
+
 
 .fixedDataTableColumnResizerLineLayout_mouseArea {
   cursor: ew-resize;
@@ -134,26 +95,14 @@
 }
 
 body[dir="rtl"] .fixedDataTableColumnResizerLineLayout_main {
-  /* the resizer line is in the wrong position in RTL with no easy fix.
-   * Disabling is more useful than displaying it.
-   * #167 (github) should look into this and come up with a permanent fix.
-   */
+
   display: none !important;
 }
 
 .fixedDataTableColumnResizerLineLayout_hiddenElem {
   display: none !important;
 }
-/**
- * Copyright (c) 2015, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- *
- * @providesModule fixedDataTableLayout
- */
+
 
 .fixedDataTableLayout_main {
   border-style: solid;
@@ -190,28 +139,21 @@ body[dir="rtl"] .fixedDataTableColumnResizerLineLayout_main {
 .fixedDataTableLayout_rowsContainer {
   overflow: hidden;
   position: relative;
+  background-color: white;
 }
 
 .fixedDataTableLayout_horizontalScrollbar {
   bottom: 0;
   position: absolute;
+  background-color: white;
 }
-/**
- * Copyright (c) 2015, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- *
- * @providesModule fixedDataTableRowLayout
- */
 
 .fixedDataTableRowLayout_main {
   box-sizing: border-box;
   overflow: hidden;
   position: absolute;
   top: 0;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .fixedDataTableRowLayout_body {
@@ -238,16 +180,6 @@ body[dir="rtl"] .fixedDataTableColumnResizerLineLayout_main {
   position: absolute;
   top: 0;
 }
-/**
- * Copyright (c) 2015, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- *
- * @providesModule ScrollbarLayout
- */
 
 .ScrollbarLayout_main {
   box-sizing: border-box;
@@ -280,16 +212,14 @@ body[dir="rtl"] .fixedDataTableColumnResizerLineLayout_main {
 
 .ScrollbarLayout_mainHorizontal {
   bottom: 0;
-  height: 15px;
+  height: 10px;
   left: 0;
-  -webkit-transition-property: background-color height;
-          transition-property: background-color height;
 }
 
 /* Touching the scroll-track directly makes the scroll-track bolder */
 .ScrollbarLayout_mainHorizontal.public_Scrollbar_mainActive,
 .ScrollbarLayout_mainHorizontal:hover {
-  height: 17px;
+  /*height: 17px;*/
 }
 
 .ScrollbarLayout_face {
@@ -318,6 +248,7 @@ body[dir="rtl"] .fixedDataTableColumnResizerLineLayout_main {
   bottom: 0;
   left: 0;
   top: 0;
+  height: 12px;
 }
 
 .ScrollbarLayout_faceHorizontal:after {
@@ -339,28 +270,13 @@ body[dir="rtl"] .fixedDataTableColumnResizerLineLayout_main {
   right: 4px;
   top: 0;
 }
-/**
- * Copyright (c) 2015, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- *
- * @providesModule fixedDataTable
- *
- */
 
-/**
- * Table.
- */
 .public_fixedDataTable_main {
   border-color: #d3d3d3;
 }
 
 .public_fixedDataTable_header,
 .public_fixedDataTable_hasBottomBorder {
-  border-bottom: 2px solid #d3d3d3;
 }
 
 .public_fixedDataTable_header .public_fixedDataTableCell_main {
@@ -377,20 +293,7 @@ body[dir="rtl"] .fixedDataTableColumnResizerLineLayout_main {
 .public_fixedDataTable_horizontalScrollbar .public_Scrollbar_mainHorizontal {
   background-color: #fff;
 }
-/**
- * Copyright (c) 2015, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- *
- * @providesModule fixedDataTableCell
- */
 
-/**
- * Table cell.
- */
 .public_fixedDataTableCell_main {
   background-color: #fff;
   border-color: #d3d3d3;
@@ -401,44 +304,17 @@ body[dir="rtl"] .fixedDataTableColumnResizerLineLayout_main {
 }
 
 .public_fixedDataTableCell_cellContent {
-  padding: 8px;
+  padding: 12px;
 }
 
 .public_fixedDataTableCell_columnResizerKnob {
   background-color: #0284ff;
 }
-/**
- * Copyright (c) 2015, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- *
- * @providesModule fixedDataTableColumnResizerLine
- *
- */
 
-/**
- * Column resizer line.
- */
 .public_fixedDataTableColumnResizerLine_main {
   border-color: #0284ff;
 }
-/**
- * Copyright (c) 2015, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- *
- * @providesModule fixedDataTableRow
- */
 
-/**
- * Table row.
- */
 .public_fixedDataTableRow_main {
   background-color: #fff;
 }
@@ -451,17 +327,6 @@ body[dir="rtl"] .fixedDataTableColumnResizerLineLayout_main {
 .public_fixedDataTableRow_columnsShadow {
   background: 0 0 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAYAAAD5PA/NAAAAFklEQVQIHWPSkNeSBmJhTQVtbiDNCgASagIIuJX8OgAAAABJRU5ErkJggg==) repeat-y;
 }
-/**
- * Copyright (c) 2015, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
- *
- * @providesModule Scrollbar
- *
- */
 
 /**
  * Scrollbars.
