@@ -11,6 +11,10 @@
 .whiteText{
   color:white;
 }
+.logout{
+  color: #1bbdda;
+  cursor: pointer;
+}
 .loginPageTextBox{
   margin-bottom: 20px;
   width: 100%;
@@ -18,7 +22,7 @@
   height: 25px;
   padding: 5px;
   padding-left: 10px;
-  background-color: #292a4b;
+  background-color: #20304b;
   outline: none;
   border: 0px;
 }
@@ -26,7 +30,9 @@
   position: relative;
   margin-bottom: 5%;
   color: white;
-  font-family: helvetica;
+  font-family: -apple-system;
+  font-weight: 600;
+  font-size: 48px;
 }
 .loginSection{
   width: 40%;
@@ -38,7 +44,7 @@
 .loginBlockWrapper{
   width: 100%;
   height: 100%;
-  background: #212146;
+  background: #142541;
   position: absolute;
 }
 .mainContainer, .mainWrapper, #app {
@@ -67,12 +73,12 @@
   height: 90%;
 }
 .selectOption{
-  font-size: 15px;
-  font-family: helvetica;
-  color: grey;
-  font-weight: 200;
-  height: 50px;
-  padding-top: 20px;
+  font-family: -apple-system;
+  color: #999999;
+  font-weight: 600;
+  font-style: normal;
+  height: 60px;
+  padding-top: 60px;
 }
 .rooms,.satelliteOffices{
   height: 100px;
@@ -82,12 +88,32 @@
   border-radius: 70px;
   border: 1px solid grey;
 }
+.rooms{
+  background-image: url('../Icons/adminIcon/deselected_rooms.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.roomSelected{
+  background-image: url('../Icons/adminIcon/selected_rooms.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.satelliteOffices{
+  background-image: url('../Icons/adminIcon/deselected_satellite office.svg') !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.satelliteSelected{
+  background-image: url('../Icons/adminIcon/selected_satellite_office.svg') !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 .satelliteOffices:hover{
-  border:1px solid #63c4e0;
+  border:1px solid #1bbdda;
   cursor: pointer;
 }
 .rooms:hover{
-  border:1px solid #63c4e0;
+  border:1px solid #1bbdda;
   cursor: pointer;
 }
 .roomWrapper,.satelliteWrapper{
@@ -95,6 +121,29 @@
   width: 200px;
   margin: 0 auto;
 }
+.satelliteWrapper{
+  margin-top: 60px;
+}
 .signIn{
   cursor: pointer;
+  background-image: url('../Icons/adminIcon/done_login.svg');
+  height: 80px;
+  width: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.welcomeBack{
+  font-family: -apple-system;
+  color: #999999;
+}
+.welcomeUserName{
+  font-family: -apple-system;
+  color: #fff;
+  font-weight: 600;
+}
+.roomLabel,.satelliteOfficeLabel{
+  margin-top: 30px;
+  color: #999999;
 }

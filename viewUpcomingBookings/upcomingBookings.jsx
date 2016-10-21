@@ -72,12 +72,6 @@ class BookingsTable extends React.Component {
         className = {"hello"}
         {...this.props}>
         <Column
-          header={<Cell>Id</Cell>}
-          cell={<TextCell data={dataList} col="firstName" />}
-          fixed={true}
-          width={(this.props.containerWidth-140)/10}
-        />
-        <Column
           header={<Cell>Profile & Charge Code</Cell>}
           cell={<TextCellAvtar data={dataList} col="companyName" />}
           width={(this.props.containerWidth-140)/5}

@@ -12,6 +12,45 @@ class FeedbackPage extends React.Component {
     }
   }
 
+  componentDidMount(){
+    // Profile picture upload code
+    var icon = document.querySelector('.pictureDiv');
+    document.querySelector('#avatarUpload').addEventListener("change",function(e){
+       icon.style.background = 'url('+URL.createObjectURL(e.target.files[0])+')';
+    });
+
+    // code for multiple upload
+
+    var filesInput = document.getElementById("files");
+        filesInput.addEventListener("change", function(event){
+
+            let files = event.target.files; //FileList object
+            let output = document.getElementById("multiPictureDiv");
+
+            for(let i = 0; i< files.length; i++)
+            {
+                var file = files[i];
+                //Only pics
+                if(!file.type.match('image'))
+                continue;
+                var picReader = new FileReader();
+                picReader.addEventListener("load",function(event){
+
+                    let picFile = event.target;
+                    let div = document.createElement("div");
+                    div.className = "multipleUploadDiv";
+                    div.innerHTML = "<img class='thumbnail' src='" + picFile.result + "'" +
+                            "title='" + picFile.name + "'/>";
+                    output.insertBefore(div,null);
+                });
+                 //Read the image
+                picReader.readAsDataURL(file);
+            }
+        });
+  }
+
+
+
   makePrimarySection(){
 
     return(
@@ -19,7 +58,9 @@ class FeedbackPage extends React.Component {
       <div className = "contentWrapperForAddRoom">
         <div className = "primaryDetailsSection">
           <div className = "addDisplayPicture">
-              <div className = "pictureDiv"></div>
+              <div className = "pictureDiv">
+                <input type="file" id="avatarUpload"/>
+              </div>
               <div className = "addPictureLabel">Add display picture</div>
           </div>
           <div className = "prmiaryFieldWrapper">
@@ -50,7 +91,13 @@ class FeedbackPage extends React.Component {
                 style = {{"width":"100%"}}
               />
            </div>
-            <div className = "addMorePicturesButton">ADD MORE PICTURES</div>
+            <div className = "addMorePicturesButton" id = "result">
+              <div className = "addmoreWrapper">
+                <div className = "addMoreLabel">ADD MORE PICTURES</div>
+                <input id="files" type="file" multiple/>
+              </div>
+              <div id = "multiPictureDiv"></div>
+            </div>
          </div>
        </div>
      </div>

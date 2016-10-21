@@ -61,6 +61,22 @@
   border-radius: 25px;
   margin-top: 25px;
   margin-right: 5px;
+  cursor: pointer;
+}
+.allocate{
+  background-image: url('../Icons/adminIcon/done_login.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.cancel{
+  background-image: url('../Icons/adminIcon/cancel.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.save{
+  background-image: url('../Icons/adminIcon/await.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .idLocationDropDownContainer{
   float: right;

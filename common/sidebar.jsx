@@ -139,17 +139,16 @@ class Sidebar extends React.Component {
                 <div className = "whiteText">Aman</div>
                 <div className = "logout">Logout</div>
               </div>
-              <MenuItem style={{color: "white",fontSize:"12px"}} onClick = {this.showNewPage.bind(this,"all")}>Home</MenuItem>
-              <MenuItem style={{color: "white",fontSize:"12px"}} onClick = {this.showNewPage.bind(this,"addNew")}>Add GuestHouse</MenuItem>
-              <MenuItem style={{color: "white",fontSize:"12px"}} onClick = {this.showNewPage.bind(this,"all")}>View bookings</MenuItem>
+              <MenuItem style={{color: "white",fontSize:"12px"}}>Home</MenuItem>
+              <MenuItem style={{color: "white",fontSize:"12px"}}>Add GuestHouse</MenuItem>
+              <MenuItem style={{color: "white",fontSize:"12px"}}>View bookings</MenuItem>
               <MenuItem style={{color: "white",fontSize:"12px"}} onClick = {this.showNewPage.bind(this,"upcoming")}>Upcoming Bookings</MenuItem>
-              <MenuItem style={{color: "white",fontSize:"12px"}} onClick = {this.showNewPage.bind(this,"upcomingHotel")}>Upcoming Hotel Bookings</MenuItem>
+              {this.props.showHotelUpComing ? <MenuItem style={{color: "white",fontSize:"12px"}}>Upcoming Hotel Bookings</MenuItem>:null}
               <MenuItem style={{color: "white",fontSize:"12px"}}>Reports</MenuItem>
-              <MenuItem style={{color: "white",fontSize:"12px"}} onClick = {this.showNewPage.bind(this,"feedback")}>Feedback</MenuItem>
+              <MenuItem style={{color: "white",fontSize:"12px"}}>Feedback</MenuItem>
           </Drawer>
         <div className = "sideBarContentWrapper">
           {this.state.viewBookings ? <BookingsTable pageName = {"View Bookings"}/> : this.state.upComingBookings ? <UpcomingBookings listOfUpcomingBookings = {this.state.listOfUpcomingBookings} pageName = {"Upcoming Bookings"}/> : null}
-          {this.state.feebackPage ? <Feedback/> : null}
           {this.state.feebackPage ? <Feedback/> : null}
           {this.state.addNew ? <AddGuestHouse/> : null}
           {this.state.upComingHotelBookings ? <UpcomingBookings listOfUpcomingBookings = {this.state.listOfOnlyHotels} pageName = {"Upcoming Hotel Bookings"}/> : null}

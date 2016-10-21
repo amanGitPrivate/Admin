@@ -30,9 +30,9 @@ class App extends React.Component {
               <div className = "adminWrapper">Admin Login</div>
               <input type = "text" className = "loginPageTextBox" placeholder = "enter username or email" refs = "username"></input>
               <div className = "lineBreak"></div>
-              <input type = "text" className = "loginPageTextBox" placeholder = "enter password" refs = "password"></input>
+              <input type = "password" className = "loginPageTextBox" placeholder = "enter password" refs = "password"></input>
               <div className = "lineBreak"></div>
-              <div className = "signIn" onClick = {this.signIn.bind(this)}>X</div>
+              <div className = "signIn" onClick = {this.signIn.bind(this)}></div>
             </div>
           </div>
          }
